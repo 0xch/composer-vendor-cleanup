@@ -91,6 +91,8 @@ class CleanupRules
             'symfony/property-access' => [$docs, $tests],
             'symfony/translation' => [$docs, $tests],
             'symfony/translation-contracts' => [$docs, $tests],
+            'symfony/workflow' => [$docs, $tests],
+            'symfony/config' => [$docs, $tests],
             'symfony/dependency-injection' => [$docs, $tests],
             'tijsverkoyen/css-to-inline-styles' => [$docs, $tests],
             'twig/twig' => [$docs, $tests],
@@ -116,6 +118,7 @@ class CleanupRules
             'mk-j/php_xlsxwriter' => [$docs, 'examples testbench example example-cli'],
             'markbaker/complex' => [$docs, 'examples'],
             'markbaker/matrix' => [$docs, 'examples'],
+            'fzaninotto/faker' => [$docs, $tests]
         ];
     }
 }
