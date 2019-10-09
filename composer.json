@@ -1,0 +1,27 @@
+{
+    "name": "0xch/composer-vendor-cleanup",
+    "description": "Removes whitelisted unnecessary files (like tests/docs etc.) from vendor directory",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "0xch",
+            "homepage": "https://github.com/0xch"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "composer/composer": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oxch\\Composer\\": "src/"
+        }
+    },
+    "scripts": {
+        "cleanVendor": [
+            "Oxch\\Composer\\CleanupScript::cleanVendor"
+        ]
+    }
+}
