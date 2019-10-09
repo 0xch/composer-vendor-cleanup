@@ -1,3 +1,5 @@
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/0xch/composer-vendor-cleanup.svg?style=flat-square)](https://packagist.org/packages/0xch/composer-vendor-cleanup)
+[![Total Downloads](https://img.shields.io/packagist/dt/0xch/composer-vendor-cleanup.svg?style=flat-square)](https://packagist.org/packages/0xch/composer-vendor-cleanup)
 # Composer vendor cleanup
 This is a simple script for the Composer to remove unnecessary files (documentation/examples/tests etc.) from included vendor packages.
 Therefore it's a script it can be easily used as part of a deploy script.
