@@ -1,6 +1,6 @@
 <?php
 
-namespace Oxch\Composer;
+namespace Oxch\VendorCleanup;
 
 use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
@@ -8,7 +8,7 @@ use Composer\Script\Event;
 use Composer\Util\Filesystem;
 use Exception;
 
-class CleanupScript
+class Packages
 {
     const DEFAULT_RULES_FILENAME = 'rules.json';
     const PACKAGES_KEY = 'packages';

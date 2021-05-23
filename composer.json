@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Oxch\\Composer\\": "src/"
+            "Oxch\\VendorCleanup\\": "src/"
         }
     },
     "scripts": {
         "cleanVendor": [
-            "Oxch\\Composer\\CleanupScript::cleanVendor"
+            "Oxch\\VendorCleanup\\Packages::cleanVendor"
         ]
     }
 }
