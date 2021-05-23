@@ -6,10 +6,8 @@ Therefore it's a script it can be easily used as part of a deploy script.
 
 In my projects it saves about 20-30% of vendor size.
 
-It uses predefined whitelist (`src/CleanupRules.php`) to remove files. So the risk of not working on included packages is reduced.
+It uses predefined whitelist (`rules.json`) to remove files. So the risk of not working on included packages is reduced.
 Script is based on rules from barryvdh's package https://github.com/barryvdh/composer-cleanup-plugin .
-
-I just needed a script to execute manually instead of a plugin which is executing every time.
 
 Feel free to submit pull requests with new rules or features.
 
@@ -28,17 +26,18 @@ Then add to your `composer.json`:
 }
 ```
 
+(optional) Copy `rules.json` to custom dir and modify for your case and pass filename as argument to composer.
+
 ### Usage
 Once installed just run command (defined in **Installation** step):
 ```
-composer cleanVendor
+composer cleanVendor    #use default rules config file
+composer cleanVendor customRules.json    #use custom rules config file    
 ```
 It will go via all installed packages which are on the whitelist and remove unnecessary files.
-If you are curious how much space is saved in your case - you can check it by executing command `du -hs vendor/` before and after this script.
-
 
 ### Look for big files
-You can use this command to display possible unnecessary files which can be deleted by adding to `src/CleanupRules.php:
+You can use this command to display possible unnecessary files which can be deleted by adding to your custom rules config file.
 ```
 du -hd 5 vendor/ | sort -h | grep -Pi "/(tests?|examples?|samples?)$"
 ```
